@@ -22,6 +22,7 @@
 	<li><a href="xml02.do">xml 응답2</a></li>
 	<li><a href="xml03.do">xml 응답3</a></li>
 	<li><a href="xml04.do">xml 응답4</a></li>
+	<li><a href="users/signup_form.do">회원가입 폼 예제</a></li>
 </ul>
 <h4>공지사항</h4>
 <ul>
