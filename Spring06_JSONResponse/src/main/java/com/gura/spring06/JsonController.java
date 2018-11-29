@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -93,7 +94,8 @@ public class JsonController {
 		return "json01";
 	}
 	
-	@RequestMapping("/json02")
+	@RequestMapping(value="/json02", method=RequestMethod.GET, 
+			produces="application/json;charset=utf-8")
 	@ResponseBody
 	public Map<String, Object> json02() {
 		Map<String, Object> map=new HashMap<>();
