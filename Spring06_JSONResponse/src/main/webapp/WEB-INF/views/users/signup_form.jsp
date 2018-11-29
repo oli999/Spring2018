@@ -32,7 +32,12 @@
 			method:"get",
 			data:{inputId:inputId},
 			success:function(responseData){
-				
+				console.log(responseData);
+				if(responseData.canUse){//사용 가능한 아이디라면
+					$("#checkResult").text("사용가능");
+				}else{
+					$("#checkResult").text("사용불가");
+				}
 			}
 		});
 		return false; //폼 전송 막기 
